@@ -1,0 +1,6 @@
+# Datos Braquistócrona Parte A:
+
+param n:= 100; 
+param a:= 1;
+param b:= 1;
+param tol:= 1e-12; 

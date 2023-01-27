@@ -1,0 +1,18 @@
+# Borrar los anterior comandos en AMPL
+reset;
+
+# Cargar el modelo
+load amplcsv.dll;
+
+model ModeloA.mod;
+# Cargar los datos
+data parte_a.dat;
+
+# Indicación a AMPL de que se quiere utilizar como solver
+option solver loqo;  
+
+#Resolver
+solve;
+display x, y; 
+printf "\n"; 
+
