@@ -1,6 +1,6 @@
 # Brachistochrone
 Numerically approximating the brachistochrone curve can be considered an optimization problem. We want to find the trajectory that minimises the time required to move a body from a point $O$ to a point $F$ by considering only the gravity force. For the sake of simplicity, when considering the AMPL models, we have chosen to consider the axis of the ordinates in reverse; that is, treating an uphill instead of a downhill, such that each point $y$ of the found optimal function is $-y$ on the actual ramp. Our initial point will be $O=(0,0)$ and our final point $F=(1,1)$. We will perform the approximation of the brachistochrone curve in 3 different ways:\
-$A)$ Discretising the $X$ axis into $n+1$ points, { $x_0,\dots , x_n$}, considering them as fixed parameters and treating { $y_0,\dots, y_n$} as variables of our problem. The mathematical formulation is as follows:
+$A)$ Discretising the $X$ axis into $n+1$ points, $\lbrace x_0,\dots , x_n \rbrace$, considering them as fixed parameters and treating $\lbrace y_0,\dots, y_n\rbrace$ as variables of our problem. The mathematical formulation is as follows:
 ```math
 		(P)
 		\left\{
@@ -13,7 +13,7 @@ $A)$ Discretising the $X$ axis into $n+1$ points, { $x_0,\dots , x_n$}, consider
 		\end{align}
 		\right.
 ```
-$B)$ Discretising the $Y$ axis into $n+1$ points, { $y_0,\dots , y_n$}, considering them as fixed parameters and treating { $x_0,\dots, x_n$} as variables of our problem. The mathematical formulation is as follows:
+$B)$ Discretising the $Y$ axis into $n+1$ points, $\lbrace y_0,\dots , y_n\rbrace$, considering them as fixed parameters and treating $\lbrace x_0,\dots, x_n\rbrace$ as variables of our problem. The mathematical formulation is as follows:
 ```math
 		(P)
 		\left\{
@@ -27,7 +27,7 @@ $B)$ Discretising the $Y$ axis into $n+1$ points, { $y_0,\dots , y_n$}, consider
 		\end{align}
 		\right.
 ```
-$C)$ Discretising both the $X$ and $Y$ axis into $n+1$ points each, and treating { $x_0,\dots, x_n, y_0,\dots , y_n$} as variables of our problem. The mathematical formulation is as follows:
+$C)$ Discretising both the $X$ and $Y$ axis into $n+1$ points each, and treating $\lbrace x_0,\dots, x_n, y_0,\dots , y_n\rbrace$ as variables of our problem. The mathematical formulation is as follows:
 ```math
 		(P)
 		\left\{
