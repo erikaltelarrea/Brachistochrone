@@ -1,0 +1,20 @@
+# Borrar los anteriores comandos en AMPL
+reset;
+
+option log_file output.dat;
+
+# Indicación de usar MINOS: 
+option solver minos;
+option minos_options 'superbasics_limit= 1000';
+
+# Cargar el modelo
+model ModeloA.mod;
+# Cargar los datos
+data datos.dat;
+
+#Resolver solve; 
+display x, y; 
+printf ”\n”;
+
+option log file ’’; 
+close output.dat;
