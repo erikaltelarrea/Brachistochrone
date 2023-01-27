@@ -45,6 +45,8 @@ $C)$ Discretising both the $X$ and $Y$ axis into $n$ points each, and treating {
 		\end{align}
 		\right.
 ```
+For the variants $A$ and $B$, we will also consider a non-uniform (NU) discretisation of the axis.
+
 # Use
 The number of points of de discretisation, $n$, the $tol$ parameter and the values of $F=(a,b)$ can be all modified in the `datos.dat` file. One must install the [AMPL solvers](https://ampl.com/), place all the archives in the same directory, modifiy the desired file to run in the `resultado.run` file, if wanted, and run `resultado.run`.
 
